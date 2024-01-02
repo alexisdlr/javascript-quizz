@@ -13,7 +13,7 @@ interface State {
   reset: () => void
 }
 
-const API_URL = import.meta.env.PROD ? 'https://midu-react-13.surge.sh/' : 'http://localhost:5173/'
+const API_URL = import.meta.env.PROD ? 'https://https://javascript-quizz-gilt.vercel.app/' : 'http://localhost:5173/'
 
 export const useQuestionStore = create<State>()(devtools(persist((set, get) => {
   return {
