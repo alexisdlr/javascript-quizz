@@ -5,8 +5,8 @@ interface State {
   onOpen: () => void;
   onClose: () => void;
 }
-export const useModalStore = create<State>()(persist((set) => ({
-  isOpen: true,
+export const useStatisticsStore = create<State>()(persist((set) => ({
+  isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
-}), {name: 'start-modal'}));
+}), {name: 'modal-statistics'}));
