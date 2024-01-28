@@ -14,12 +14,12 @@ const StatisticsModal = () => {
   const { correct, incorrect } = useQuestionData();
 
   const handleClose = () => {
-    onClose();
     fetchQuestions(5);
+    onClose();
   };
   return (
     <Modal isOpen={isOpen} onClose={handleClose}>
-      <Stack>
+      <Stack >
         <Typography
           variant="h2"
           sx={{ color: hasWin ? "green" : "red" }}
